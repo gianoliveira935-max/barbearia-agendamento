@@ -1,11 +1,7 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ServiceController;
 
-Route::inertia('/', 'Welcome')->name('home');
-
-Route::middleware(['auth', 'verified'])->group(function () {
-    Route::inertia('dashboard', 'Dashboard')->name('dashboard');
-});
-
-require __DIR__.'/settings.php';
+Route::get('/servicos', [ServiceController::class, 'index'])->name('services.index');
+Route::post('/servicos', [ServiceController::class, 'store'])->name('services.store');
+Route::delete('/servicos/{service}', [ServiceController::class, 'destroy'])->name('services.destroy');
