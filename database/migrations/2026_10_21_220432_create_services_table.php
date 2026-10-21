@@ -12,9 +12,12 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('services', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
-        });
+    $table->id();
+    $table->string('name');
+    $table->unsignedInteger('duration_minutes');
+    $table->unsignedInteger('price_cents'); // preço em centavos, evita erro de arredondamento
+    $table->timestamps();
+});
     }
 
     /**
