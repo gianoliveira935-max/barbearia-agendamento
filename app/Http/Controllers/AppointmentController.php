@@ -89,6 +89,12 @@ class AppointmentController extends Controller
             if ($start->lt(now())) {
                 continue;
             }
+            $lunchStart = $day->copy()->setTime(12, 0);
+            $lunchEnd = $day->copy()->setTime(13, 0);
+
+            if ($start->lt($lunchEnd) && $end->gt($lunchStart)) {
+                continue;
+            }
 
             // conflito: existente.starts < novo.end E existente.ends > novo.start
             $conflict = $booked->contains(
