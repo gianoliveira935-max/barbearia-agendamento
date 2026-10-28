@@ -63,7 +63,6 @@ Principais prompts (parafraseados):
 1. Enviei o PDF do desafio e pedi ajuda para fazê-lo, avisando que era iniciante e nunca tinha usado Laravel.
 2. Pedi para explicar o que é um framework usando o que já conheço de lógica em C e Python.
 3. Perguntei se podia usar XAMPP com MySQL (como o professor sugeriu) e qual banco seria melhor para quem for avaliar.
-4. Pedi ajuda com erros do Git: remote origin already exists, failed to push e identidade (nome e e-mail) ausente no commit.
-5. Pedi o passo a passo do agendamento com horários livres, conflito e expediente, e depois o código com a lógica separada em partes.
+4.  Pedi o passo a passo do agendamento com horários livres, conflito e expediente, e depois o código com a lógica separada em partes.
 
 Revisei e testei o código gerado, e adaptei partes durante o desenvolvimento (por exemplo, o intervalo de almoço).
